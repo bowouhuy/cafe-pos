@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     // return view('welcome');
+// });
+
+Route::get('/', 'BaseController@index');
+
+Route::get('welcome', 'BaseController@welcome');
+
+Route::get('halo/{nama}', 'BaseController@halo');
