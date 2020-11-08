@@ -16,6 +16,6 @@ class BaseController extends Controller
 
     public function halo($nama){
         return view('home', ['nama'=>$nama]);
-        // var_dump($nama);
+       
     }
 }

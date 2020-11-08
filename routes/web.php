@@ -22,3 +22,10 @@ Route::get('/', 'BaseController@index');
 Route::get('welcome', 'BaseController@welcome');
 
 Route::get('halo/{nama}', 'BaseController@halo');
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
+
+Auth::routes();
+
+Route::get('/home', 'HomeController@index')->name('home');
