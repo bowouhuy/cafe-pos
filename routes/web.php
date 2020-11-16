@@ -17,11 +17,11 @@ use Illuminate\Support\Facades\Route;
 //     // return view('welcome');
 // });
 
-Route::get('/', 'HomeController@index');
-
 // Route::get('welcome', 'BaseController@welcome');
 
 // Route::get('halo/{nama}', 'BaseController@halo');
+
+Route::get('/', 'HomeController@index');
 
 Auth::routes();
 
