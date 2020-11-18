@@ -18,4 +18,8 @@ class BaseController extends Controller
         return view('home', ['nama'=>$nama]);
        
     }
+
+    public function demo(){
+        return view('home');
+    }
 }
